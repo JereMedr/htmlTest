@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Document</title>
+
+	<style>
+		
+		body{
+			min-width: 320px;
+		}
+
+		.box1, .box2 , .box3{
+			border: solid;
+
+		}
+		
+		.box1{
+			background-color: red;
+		}
+		.box2{
+			background-color: blue;
+		}
+		.box3{
+			background-color: green;
+		}
+
+
+		.container{
+			display: flex;
+			flex-direction: row;
+
+		}
+
+
+		@media only screen and (max-width: 480px){
+			.container{
+				flex-direction: column;
+			}
+		}
+
+
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="box1"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea minima harum ad aperiam quia adipisci iste. Ratione quas in numquam omnis dicta porro odio vitae et a ut, id rerum.</div>
+		<div class="box2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam tempore, sequi ea dolor. Cumque atque dolores recusandae consequuntur sapiente omnis explicabo laboriosam, natus id voluptatem illum, dolor obcaecati autem quia!</div>
+		<div class="box3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio debitis vero doloribus magnam dicta ad reprehenderit ipsa deleniti quis maxime nihil, repudiandae, placeat quos aut sapiente id, maiores nam fugit!</div>
+	</div>
+</body>
+</html>
